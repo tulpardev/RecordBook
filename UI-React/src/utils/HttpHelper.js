@@ -7,7 +7,7 @@ export const httpPost = (endPoint, data) => {
     mode: "same-origin",
     body: JSON.stringify(data),
   })
-    .then(data)
+    .then(true)
     .catch(handleError);
 };
 

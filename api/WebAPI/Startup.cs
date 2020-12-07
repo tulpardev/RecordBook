@@ -47,7 +47,7 @@ namespace WebAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DbContext dbContext)
         {
             dbContext.Database.Migrate();
-            var sql = "CREATE TABLE `RecordBook`.`Users` (   `Id` INT NOT NULL AUTO_INCREMENT,   `Name` VARCHAR(45) NULL,   `LastName` VARCHAR(45) NULL,   `BloodGroup` VARCHAR(45) NULL,   `PhoneCountryCode` VARCHAR(45) NULL,   `PhoneNumber` VARCHAR(45) NULL,   `City` VARCHAR(45) NULL,   `Address` VARCHAR(45) NULL,   PRIMARY KEY (`Id`));INSERT INTO `RecordBook`.`Users` (`Name`, `LastName`, `BloodGroup`, `PhoneCountryCode`, `PhoneNumber`, `City`, `Address`) VALUES ( 'Süha', 'Arıkan', '0rh+', '+90', '5554443322', 'ANTALYA', 'Konyaaltı');";
+            var sql = "CREATE TABLE `RecordBook`.`Users` (   `Id` INT NOT NULL AUTO_INCREMENT,   `Name` VARCHAR(45) NULL,   `LastName` VARCHAR(45) NULL,   `BloodGroup` VARCHAR(45) NULL,   `PhoneCountryCode` VARCHAR(45) NULL,   `PhoneNumber` VARCHAR(45) NULL,   `City` VARCHAR(45) NULL,   `Address` VARCHAR(150) NULL,   PRIMARY KEY (`Id`));INSERT INTO `RecordBook`.`Users` (`Name`, `LastName`, `BloodGroup`, `PhoneCountryCode`, `PhoneNumber`, `City`, `Address`) VALUES ( 'Süha', 'Arıkan', '0rh+', '+90', '5554443322', 'ANTALYA', 'Konyaaltı');";
             dbContext.Database.ExecuteSqlRaw(sql);
 
             if (env.IsDevelopment())
