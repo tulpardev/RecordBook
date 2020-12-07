@@ -38,4 +38,4 @@ docker run -d --network host tulpardev/ets:ui
 docker run -d --network host tulpardev/ets:api
 ```
 
-![](https://github.com/tulpardev/RecordBook/blob/main/SuhaArikanETS.gif)
+![](https://github.com/tulpardev/RecordBook/blob/master/SuhaArikanETS.gif)
