@@ -1,4 +1,4 @@
-# ETSTUR CODE CHALLENGE
+# WEB CODE CHALLENGE
 
 ##### Proje içerisinde Database,UI framework ,Backend ve Container teknolojileri kullanılmıştır.
 
